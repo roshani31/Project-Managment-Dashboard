@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 70%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.heading b{
+    font-size: 1.5rem;
+    background-color: hotpink;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+.board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.block,
+.newtaskblock{
+    padding: 0.6rem;
+    width: 30.5%;
+    min-width: 14rem;
+    min-height: 4.5rem;
+    border-radius: 0.3rem;
+    
+}
+#todo{
+    background-color: mediumpurple;
+}
+#inprogress{
+    background-color: palegreen;
+}
+#done{
+    background-color: turquoise;
+}
+.task{
+    background-color: #fff;
+    margin: 0.2rem 0rem 0.3rem 0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.2rem 0.5rem 2rem;
+}
+#cbtn{
+    margin: 0.2rem 0rem 0.5rem 0rem;
+    background-color: white;
+    width: 100%;
+    border: 0.25rem solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+.newtaskblock{
+    display: flex;
+    background:rosybrown;
+    width: 64.4%;
+    flex-direction: column;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+    margin: 0.2rem;
+}
+.form-row-label{
+    width: 15%;
+    padding:0.2rem;
+    padding-right: 0.5rem;
+    border: 0.1rem solid black;
+    border-right: 0;
+    border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+.form-row-input{
+    border: 0.1rem solid black;
+    border-radius: 0rem 0.2rem 0.2rem 0rem;
+    width: 85%;
+}
+textarea{
+    resize: none;
+}
+.form-row-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem;
+}
+#edit-button,#save-button,#cancel-button{
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    width: 49.2%;
+    border: 0.25rem solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+#edit-button{
+    display: none;
+}

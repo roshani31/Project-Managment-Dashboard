@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manegment Board</title>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom js file link -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <b>Project Manegment System</b>
+        </div>
+        <div class="board">
+            <div class="block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <b >To-Do</b>
+                <div class="cbtn">
+                    <button id="cbtn" onclick="createTask()">Create new task</button>
+                </div>
+                <div class="task" id="task1" draggable="true" ondragstart="drag(event)">
+                    <span>Task 1</span>
+                </div>
+                <div class="task" id="task2" draggable="true" ondragstart="drag(event)">
+                    <span>Task 2</span>
+                </div>
+                <div class="task" id="task3" draggable="true" ondragstart="drag(event)">
+                    <span>Task 3</span>
+                </div>
+                <div class="task" id="task4" draggable="true" ondragstart="drag(event)">
+                    <span>Task 4</span>
+                </div>
+                <div class="task" id="task5" draggable="true" ondragstart="drag(event)">
+                    <span>Task 5</span>
+                </div>
+                <div class="task" id="task6" draggable="true" ondragstart="drag(event)">
+                    <span>Task 6</span>
+                </div>
+
+            </div>
+            <div class="block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)"><b>In Progress</b></div>
+            <div class="block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)"><b>Done</b></div>
+             
+            <div class="newtaskblock" id="newtaskblock">
+                <b>New Task</b>
+                <span class="form-row">
+                    <label for="task-name" class="form-row-label">Task</label>
+                    <input type="text" name="task-name" id="task-name" class="form-row-input">
+                </span>
+                <span class="form-row">
+                    <label for="task-name" class="form-row-label">Description</label>
+                    <textarea name="task-description" id="text-description" cols="70" rows="10" class="form-row-input"></textarea>
+                </span>
+                <span class="form-row">
+                    <label for="task-name" class="form-row-label">Status</label>
+                    <select name="task-status" id="task-status" class="form-row-input" >
+                        <option value="todo">To-Do</option>
+                        <option value="inprogress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                </span>
+                <span class="form-row-buttons">
+                    <button id="edit-button" onclick="editTask()">Edit</button>
+                    <button id="save-button" onclick="saveTask()">Save</button>
+                    <button id="cancel-button" onclick="createTask()">Cancel</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
